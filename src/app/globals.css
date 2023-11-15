@@ -17,6 +17,8 @@ h1{
   font-weight: 700;
   font-size: 24px;
   line-height: normal;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 /* NIM dan BIO*/
@@ -30,7 +32,7 @@ p{
 .profile-header-banner{
   width: 120px;
   height: 120px;
-  
+  margin-right: 40px;
   position: relative;
 }
 
@@ -65,7 +67,6 @@ p{
 .header-banner-wrapper{
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 /* Content Container */
 .content-header-banner{
@@ -73,6 +74,7 @@ p{
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
+  width: 234px;
 }
 /*CTA*/
 .cta-banner-wrapper{
