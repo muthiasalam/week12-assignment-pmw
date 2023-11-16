@@ -22,7 +22,7 @@ body{
     row-gap: 24px;
    
   
-    /* Kasih ke tengah flex */
+   
     align-items: center;
     justify-content: center;
   }
