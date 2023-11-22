@@ -2,7 +2,7 @@
 .diary-container{
     display: flex;
     width: 442px;
-    padding: 24px;
+    padding: 26px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -20,7 +20,7 @@
     color: #1E1E1E;
     text-overflow: ellipsis;
     font-family: Plus Jakarta Sans;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -34,4 +34,8 @@ ul{
 
 li{
     list-style-type: none;
+}
+
+.last-item{
+    margin-bottom: 120px;
 }

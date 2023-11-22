@@ -1,11 +1,11 @@
 
 
-/* Pilih Font */
+
 h1, p{
   color: #1E1E1E;
 }
 
-/* Nama*/
+
 h1{
   font-weight: 700;
   font-size: 24px;
@@ -14,14 +14,13 @@ h1{
   word-wrap: break-word;
 }
 
-/* NIM dan BIO*/
 p{
   font-weight: 400;
   font-size: 14px;
   line-height: normal;
 }
 
-/* Profile*/
+
 .profile-header-banner{
   width: 120px;
   height: 120px;
@@ -29,10 +28,10 @@ p{
   position: relative;
 }
 
-/* Body */
 
 
-/* Container */
+
+
 .banner-container{
   display: flex;
   width: 442px;
@@ -44,12 +43,12 @@ p{
   background-color: white;
   border-radius: 14px;
 }
-/* Header Container */
+
 .header-banner-wrapper{
   display: flex;
   align-items: center;
 }
-/* Content Container */
+
 .content-header-banner{
   display: flex;
   flex-direction: column;
@@ -57,7 +56,7 @@ p{
   gap: 15px;
   width: 234px;
 }
-/*CTA*/
+
 .cta-banner-wrapper{
   width: 100%;
 }
@@ -70,7 +69,7 @@ p{
   align-self: stretch;
   border-radius: 8px;
   background: #FFEDCE;
-
+  cursor: pointer;
 }
 
 .cta-input{
@@ -84,11 +83,15 @@ p{
 
 .cta-button p{
   font-weight: 700;
+  
 }
 
-.cta-button:hover{
+.cta-button:not(.disabled):hover{
   background: #fae2ba ;
 }
 
-
+.disabled{
+  background-color: rgb(237, 237, 237);
+  cursor: not-allowed;
+}
 

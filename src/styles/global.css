@@ -8,15 +8,16 @@
     font-family: Plus Jakarta Sans;
   }
 
-/* Body website */
+
 body{
     background-color: #F4F4F4;
+
+    padding-top: 100px;
+    
+    width: 100vw; 
+    min-height: 100vh;
   
-    /* Fill Container di Figma == 100% di JS*/
-    width: 100%; 
-    height: 100%;
-  
-    /* Arah Flex */
+    
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -24,5 +25,5 @@ body{
   
    
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
