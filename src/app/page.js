@@ -36,7 +36,7 @@ export default function Home() {
             <div className="bio-nim-header-banner">
               
               <p>D121211003</p>
-              <p>Pemrograman Web A</p>
+              <p>Pemrograman Web A Inforgit </p>
             </div>
           </div>
         </div>
