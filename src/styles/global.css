@@ -11,9 +11,7 @@
 
 body{
     background-color: #F4F4F4;
-
     padding-top: 100px;
-    
     width: 100vw; 
     min-height: 100vh;
   
@@ -26,4 +24,5 @@ body{
    
     align-items: center;
     justify-content: flex-start;
+    overflow-x: hidden;
   }
