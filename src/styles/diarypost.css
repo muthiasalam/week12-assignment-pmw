@@ -13,9 +13,6 @@
 }
 
 .diary-post-container p {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
     align-self: stretch;
     overflow: hidden;
     color: #1E1E1E;

@@ -18,7 +18,7 @@ export default function Home() {
     }
   }
 
-  const isInputEmpty = inputNama.trim() === ''; // Memeriksa apakah input kosong atau hanya berisi spasi
+  const isInputEmpty = inputNama.trim() === ''; 
 
   return (
     <>

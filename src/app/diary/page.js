@@ -10,6 +10,36 @@ export default function Diary() {
   const [isiDiary, setIsiDiary] = useState([]);
   const [isLoading, setIsLoading] = useState(true); 
 
+  const [tulis, setTulis] = useState('');
+  const [diary, setDiary] = useState([]);
+
+  function handlerGantiNama() {
+    setDiary(tulis);
+    
+  }
+
+
+
+  useEffect(() => {
+    console.log('isi Diary: ' + diary);
+  }, [diary]);
+
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      handlerGantiNama();
+    }
+  }
+
+ 
+
+  async function postDiary(){
+    const updateDiary = [...isLoading, tulis]
+    setIsLoading(updateDiary)
+    setTulis('')
+  }
+
+  
+
   const endpointAPI = "https://6555c39384b36e3a431e459e.mockapi.io/diaryku";
 
   async function getDiary() {
@@ -37,9 +67,34 @@ export default function Diary() {
   }, []);
 
   return (
+    
     <div>
+      <div className="banner-container">
+      <div className="cta-banner-wrapper">
+          
+          <input
+            type="text"
+            value={tulis}
+            onChange={(e) => setTulis(e.target.value)}
+            onKeyDown={handleKeyPress}
+            placeholder="Masukkan nama"
+            className="cta-input"
+          />
+           <div
+            className={`cta-button ${tulis ? '' : 'disabled'}`}
+            style={{
+              marginTop: '12px',
+            }}
+            onClick={tulis ? handlerGantiNama : () => alert('Isi terlebih dahulu!')}
+          >
+            <p>{tulis ? 'Ganti Nama' : 'Disabled'}</p>
+          </div>
+        </div>
+        </div>
+
+      <div>
       {isLoading ? ( 
-        "API is loading"
+        <div className="loading-message">API is loading</div>
       ) : judul.length > 0 ? (
         <ul>
           {judul.map((item, idx) => (
@@ -54,8 +109,9 @@ export default function Diary() {
           ))}
         </ul>
       ) : (
-        "API not loading"
+        <div className="loading-message">API not loading</div>
       )}
+      </div>
     </div>
   );
 }
