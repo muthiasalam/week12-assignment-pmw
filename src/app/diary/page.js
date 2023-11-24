@@ -15,7 +15,7 @@ export default function Diary() {
 
   function handlerGantiNama() {
     setDiary(tulis);
-    
+    setTulis('')
   }
 
 
@@ -77,7 +77,7 @@ export default function Diary() {
             value={tulis}
             onChange={(e) => setTulis(e.target.value)}
             onKeyDown={handleKeyPress}
-            placeholder="Masukkan nama"
+            placeholder="Masukkan input"
             className="cta-input"
           />
            <div
@@ -87,7 +87,7 @@ export default function Diary() {
             }}
             onClick={tulis ? handlerGantiNama : () => alert('Isi terlebih dahulu!')}
           >
-            <p>{tulis ? 'Ganti Nama' : 'Disabled'}</p>
+            <p>{tulis ? 'Submit' : 'Disabled'}</p>
           </div>
         </div>
         </div>
