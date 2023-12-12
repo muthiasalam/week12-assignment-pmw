@@ -9,7 +9,7 @@ export default function Diary() {
   const [getJudul, setGetJudul] = useState([]);
   const [getIsiDiary, setGetIsiDiary] = useState([]);
   const [getKoleksiData, setGetKoleksiData] = useState([]);
-  const endpointAPI = "https://6555c39384b36e3a431e459e.mockapi.io/diaryku";
+  const endpointAPI = "https://657800a1197926adf62f4326.mockapi.io/diaryku";
   async function getDiary() {
     try {
       const res = await axios.get(endpointAPI);
